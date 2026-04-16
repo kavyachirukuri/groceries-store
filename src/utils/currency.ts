@@ -1,9 +1,9 @@
-const INR_FORMATTER = new Intl.NumberFormat('en-IN', {
+const GBP_FORMATTER = new Intl.NumberFormat('en-GB', {
   style: 'currency',
-  currency: 'INR',
+  currency: 'GBP',
   maximumFractionDigits: 2,
 })
 
 export function formatCurrency(amount: number): string {
-  return INR_FORMATTER.format(amount)
+  return GBP_FORMATTER.format(amount)
 }
