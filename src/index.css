@@ -1,0 +1,26 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-heading: 'Playfair Display', ui-serif, Georgia, serif;
+  --font-body: 'DM Sans', ui-sans-serif, system-ui, sans-serif;
+
+  --color-cream-50: #fdfcf8;
+  --color-cream-100: #f7f4eb;
+  --color-cream-200: #ebe4d4;
+  --color-leaf-600: #2d5a3d;
+  --color-leaf-700: #1f3f2a;
+  --color-leaf-500: #3d7a52;
+  --color-gold-400: #e8c547;
+  --color-gold-500: #d4a827;
+  --color-ink-700: #3d3a35;
+  --color-ink-500: #5c574f;
+}
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+  body {
+    @apply m-0 min-h-svh bg-cream-50 font-body text-ink-700 antialiased;
+  }
+}
