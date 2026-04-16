@@ -10,7 +10,7 @@ import {
 import type { CartLine } from '../types'
 import { getProductById, PRODUCTS } from '../data/products'
 
-const STORAGE_KEY = 'freshcart-cart'
+const STORAGE_KEY = 'groshop-cart'
 
 type CartContextValue = {
   lines: CartLine[]

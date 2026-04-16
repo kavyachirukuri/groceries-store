@@ -1,9 +1,9 @@
 export function About() {
   return (
     <div className="mx-auto max-w-3xl px-4 py-14 text-left sm:px-6">
-      <h1 className="font-heading text-4xl text-leaf-700">About FreshCart</h1>
+      <h1 className="font-heading text-4xl text-leaf-700">About Groshop</h1>
       <p className="mt-4 text-lg text-ink-500">
-        FreshCart is a playful front-end demo: a farmers-market spirit with the
+        Groshop is a playful front-end demo: a farmers-market spirit with the
         clarity of a modern grocery app. No accounts, no servers — just a cart
         that remembers what you picked for this browser session.
       </p>

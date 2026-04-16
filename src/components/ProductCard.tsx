@@ -1,4 +1,5 @@
 import type { Product } from '../types'
+import { formatCurrency } from '../utils/currency'
 
 type Props = {
   product: Product
@@ -25,7 +26,7 @@ export function ProductCard({ product, onAdd }: Props) {
         <p className="text-sm text-ink-500">{product.unit}</p>
         <div className="mt-auto flex items-center justify-between gap-3 pt-1">
           <p className="font-heading text-xl text-leaf-700">
-            ${product.price.toFixed(2)}
+            {formatCurrency(product.price)}
           </p>
           <button
             type="button"

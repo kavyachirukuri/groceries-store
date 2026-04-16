@@ -1,5 +1,6 @@
 import { getProductById } from '../data/products'
 import { useCart } from '../context/CartContext'
+import { formatCurrency } from '../utils/currency'
 
 type Props = {
   open: boolean
@@ -65,7 +66,7 @@ export function CartDrawer({ open, onClose }: Props) {
                     <div className="min-w-0 flex-1">
                       <p className="font-medium text-ink-700">{product.name}</p>
                       <p className="text-sm text-ink-500">
-                        ${product.price.toFixed(2)} × {line.quantity}
+                        {formatCurrency(product.price)} × {line.quantity}
                       </p>
                       <div className="mt-2 flex items-center gap-2">
                         <div className="inline-flex items-center rounded-full border border-cream-200 bg-cream-50">
@@ -90,7 +91,7 @@ export function CartDrawer({ open, onClose }: Props) {
                           </button>
                         </div>
                         <span className="ml-auto font-heading text-leaf-700">
-                          ${lineTotal.toFixed(2)}
+                          {formatCurrency(lineTotal)}
                         </span>
                       </div>
                     </div>
@@ -105,7 +106,7 @@ export function CartDrawer({ open, onClose }: Props) {
           <div className="mb-3 flex items-center justify-between text-ink-500">
             <span>Order total</span>
             <span className="font-heading text-2xl text-leaf-700">
-              ${subtotal.toFixed(2)}
+              {formatCurrency(subtotal)}
             </span>
           </div>
           <button

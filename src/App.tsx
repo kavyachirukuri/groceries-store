@@ -23,7 +23,7 @@ function Shell() {
         </Routes>
       </main>
       <footer className="border-t border-cream-200 bg-cream-100/80 py-8 text-center text-sm text-ink-500">
-        <p className="font-heading text-leaf-700">FreshCart</p>
+        <p className="font-heading text-leaf-700">Groshop</p>
         <p className="mt-1">Made for demo purposes — © {new Date().getFullYear()}</p>
       </footer>
       <CartDrawer open={cartOpen} onClose={() => setCartOpen(false)} />

@@ -18,7 +18,7 @@ export function Header({ cartCount, onOpenCart }: Props) {
           to="/"
           className="justify-self-start font-heading text-xl tracking-tight text-leaf-700 transition hover:text-leaf-600 sm:text-2xl"
         >
-          FreshCart
+          Groshop
         </NavLink>
 
         <button
